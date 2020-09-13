@@ -1,11 +1,11 @@
 
 ORM Compare
 =========
-Which feature do you want?	
+#### Which feature do you want?	
 
-Test Evn : Local windows	
-DB: MySQL (Version 5.6.24)	
-Test point: Batch Insert;Select paging; Transaction(update and select).	
+Test Evn : Local windows.  
+DB: MySQL (Version 5.6.24).  
+Test point: Batch Insert;Select paging; Transaction(update and select).  
 
 <table cellspacing="0" cellpadding="0">
   <col width="62" />
@@ -104,9 +104,8 @@ Test point: Batch Insert;Select paging; Transaction(update and select).
   <col width="64" />
   <col width="69" span="2" />
   <col width="96" />
-  <tr height="19">
-    <td height="19" colspan="6">　　
-    <div align="center">select(unit: ms)　　　</div></td>
+ <tr height="19">
+    <td colspan="6" height="19" width="429"><div align="center">select(unit: ms)</div></td>
   </tr>
   <tr height="19">
     <td width="62" height="19">　</td>
