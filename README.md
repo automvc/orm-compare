@@ -1,22 +1,290 @@
 
-996
+ORM Compare
 =========
-**996** 是指指早上9点上班、晚上9点下班，并且一周工作6天的工作制度，代表着中国互联网企业盛行的加班文化，是一种违反《中华人民共和国劳动法》的工作制度。   
+Which feature do you want?	
 
-**996真的管用吗?  955能做出996的活，那才叫牛！**  
-**请注意:** 我并不是想让程序员和开发人员做更多的活,而是试着分析其中的原因,然后提出更加高效的编程方法!最终减轻一线IT人员的负担!  
+Test Evn : Local windows	
+DB: MySQL (Version 5.6.24)	
+Test point: Batch Insert;Select paging; Transaction(update and select).	
+
+<table cellspacing="0" cellpadding="0">
+  <col width="62" />
+  <col width="69" />
+  <col width="64" />
+  <col width="69" span="2" />
+  <col width="96" />
+  <tr height="19">
+    <td colspan="6" height="19" width="429"><div align="center">Batch Insert(unit: ms)</div></td>
+  </tr>
+  <tr height="19">
+    <td height="19">　</td>
+    <td>5k</td>
+    <td>1w</td>
+    <td>2w</td>
+    <td>5w</td>
+    <td>10w</td>
+  </tr>
+  <tr height="19">
+    <td height="19">Bee</td>
+    <td align="right">880</td>
+    <td align="right">720</td>
+    <td align="right">620</td>
+    <td align="right">1420</td>
+    <td align="right">4700</td>
+  </tr>
+  <tr height="19">
+    <td height="19">Bee</td>
+    <td align="right">359</td>
+    <td align="right">358</td>
+    <td align="right">484</td>
+    <td align="right">1248</td>
+    <td align="right">4000</td>
+  </tr>
+  <tr height="19">
+    <td height="19">Bee</td>
+    <td align="right">348</td>
+    <td align="right">297</td>
+    <td align="right">546</td>
+    <td align="right">1279</td>
+    <td align="right">3470</td>
+  </tr>
+  <tr height="19">
+    <td height="19">(AVG)</td>
+    <td align="right">529.00 </td>
+    <td align="right">458.33 </td>
+    <td align="right">550.00 </td>
+    <td align="right">1315.67 </td>
+    <td align="right">4056.67 </td>
+  </tr>
+  <tr height="10">
+    <td height="10">　</td>
+    <td>　</td>
+    <td>　</td>
+    <td>　</td>
+    <td>　</td>
+    <td>　</td>
+  </tr>
+  <tr height="19">
+    <td height="19">MyBatis</td>
+    <td align="right">1513</td>
+    <td align="right">1092</td>
+    <td align="right">1466</td>
+    <td align="right">1700</td>
+    <td>Not Support</td>
+  </tr>
+  <tr height="19">
+    <td height="19">MyBatis</td>
+    <td align="right">1045</td>
+    <td align="right">577</td>
+    <td align="right">812</td>
+    <td align="right">1923</td>
+    <td>Not Support</td>
+  </tr>
+  <tr height="19">
+    <td height="19">MyBatis</td>
+    <td align="right">1021</td>
+    <td align="right">470</td>
+    <td align="right">1600</td>
+    <td align="right">1850</td>
+    <td>Not Support</td>
+  </tr>
+  <tr height="19">
+    <td height="19">(AVG)</td>
+    <td align="right">1193</td>
+    <td align="right">713</td>
+    <td align="right">1292.67 </td>
+    <td align="right">1824.33 </td>
+    <td>Exception</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table cellspacing="0" cellpadding="0">
+  <col width="62" />
+  <col width="69" />
+  <col width="64" />
+  <col width="69" span="2" />
+  <col width="96" />
+  <tr height="19">
+    <td height="19" colspan="6">　　
+    <div align="center">select(unit: ms)　　　</div></td>
+  </tr>
+  <tr height="19">
+    <td width="62" height="19">　</td>
+    <td width="69" align="right">20</td>
+    <td width="64" align="right">50</td>
+    <td width="69" align="right">100</td>
+    <td width="69" align="right">200</td>
+    <td width="96" align="right">500</td>
+  </tr>
+  <tr height="19">
+    <td height="19">Bee</td>
+    <td align="right">21</td>
+    <td align="right">20</td>
+    <td align="right">46</td>
+    <td align="right">51</td>
+    <td align="right">67</td>
+  </tr>
+  <tr height="19">
+    <td height="19">Bee</td>
+    <td align="right">16</td>
+    <td align="right">78</td>
+    <td align="right">32</td>
+    <td align="right">16</td>
+    <td align="right">61</td>
+  </tr>
+  <tr height="19">
+    <td height="19">Bee</td>
+    <td align="right">15</td>
+    <td align="right">78</td>
+    <td align="right">79</td>
+    <td align="right">48</td>
+    <td align="right">44</td>
+  </tr>
+  <tr height="19">
+    <td height="19">(AVG)</td>
+    <td align="right">17.33 </td>
+    <td align="right">58.67 </td>
+    <td align="right">52.33 </td>
+    <td align="right">38.33 </td>
+    <td align="right">57.33 </td>
+  </tr>
+  <tr height="9">
+    <td height="9">　</td>
+    <td>　</td>
+    <td>　</td>
+    <td>　</td>
+    <td>　</td>
+    <td>　</td>
+  </tr>
+  <tr height="19">
+    <td height="19">MyBatis</td>
+    <td align="right">99</td>
+    <td align="right">313</td>
+    <td align="right">1795</td>
+    <td align="right">2232</td>
+    <td align="right">6160</td>
+  </tr>
+  <tr height="19">
+    <td height="19">MyBatis</td>
+    <td align="right">423</td>
+    <td align="right">655</td>
+    <td align="right">1622</td>
+    <td align="right">2310</td>
+    <td align="right">6260</td>
+  </tr>
+  <tr height="19">
+    <td height="19">MyBatis</td>
+    <td align="right">421</td>
+    <td align="right">370</td>
+    <td align="right">1221</td>
+    <td align="right">2341</td>
+    <td align="right">6230</td>
+  </tr>
+  <tr height="19">
+    <td height="19">(AVG)</td>
+    <td align="right">314.33 </td>
+    <td align="right">446.00 </td>
+    <td align="right">1546.00 </td>
+    <td align="right">2294.33 </td>
+    <td align="right">6216.67 </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table cellspacing="0" cellpadding="0">
+  <col width="62" />
+  <col width="69" />
+  <col width="64" />
+  <col width="69" span="2" />
+  <col width="96" />
+  <tr height="19">
+    <td colspan="6" height="19" width="429"><div align="center">Transaction(update and select) (unit: ms)</div></td>
+  </tr>
+  <tr height="19">
+    <td height="19">　</td>
+    <td align="right">20</td>
+    <td align="right">50</td>
+    <td align="right">100</td>
+    <td align="right">200</td>
+    <td align="right">500</td>
+  </tr>
+  <tr height="19">
+    <td height="19">Bee</td>
+    <td align="right">1081</td>
+    <td align="right">70</td>
+    <td align="right">80</td>
+    <td align="right">140</td>
+    <td align="right">31600</td>
+  </tr>
+  <tr height="19">
+    <td height="19">Bee</td>
+    <td align="right">1076</td>
+    <td align="right">78</td>
+    <td align="right">78</td>
+    <td align="right">173</td>
+    <td align="right">31240</td>
+  </tr>
+  <tr height="19">
+    <td height="19">Bee</td>
+    <td align="right">1110</td>
+    <td align="right">62</td>
+    <td align="right">94</td>
+    <td align="right">171</td>
+    <td align="right">31688</td>
+  </tr>
+  <tr height="19">
+    <td height="19">(AVG)</td>
+    <td align="right">1089.00 </td>
+    <td align="right">70.00 </td>
+    <td align="right">84.00 </td>
+    <td align="right">161.33 </td>
+    <td align="right">31509.33 </td>
+  </tr>
+  <tr height="10">
+    <td height="10">　</td>
+    <td>　</td>
+    <td>　</td>
+    <td>　</td>
+    <td>　</td>
+    <td>　</td>
+  </tr>
+  <tr height="19">
+    <td height="19">MyBatis</td>
+    <td align="right">1170</td>
+    <td align="right">31</td>
+    <td align="right">79</td>
+    <td align="right">146</td>
+    <td align="right">32404</td>
+  </tr>
+  <tr height="19">
+    <td height="19">MyBatis</td>
+    <td align="right">1092</td>
+    <td align="right">33</td>
+    <td align="right">79</td>
+    <td align="right">141</td>
+    <td align="right">32891</td>
+  </tr>
+  <tr height="19">
+    <td height="19">MyBatis</td>
+    <td align="right">1170</td>
+    <td align="right">41</td>
+    <td align="right">81</td>
+    <td align="right">151</td>
+    <td align="right">31171</td>
+  </tr>
+  <tr height="19">
+    <td height="19">(AVG)</td>
+    <td align="right">1144</td>
+    <td align="right">35</td>
+    <td>79.67 </td>
+    <td align="right">146.00 </td>
+    <td align="right">32155.33 </td>
+  </tr>
+</table>
 
 
-### 试着从时代背景分析996的原因：  
-      近年来软件需求越来越复杂，变化越来越快，导致软件规模越来越大，交付时间反而要求越来越短。编程（编码）技术没有得到改进，无法适应互联网信息爆炸时代的需求。虽然架构技术有进步，但编码技术也要相应改进。犹如十年前，很多是建10层楼，现在建100层。虽然框架结构的技术跟上了，但每个房间所要砌砖的速度并没有增长10倍。那只能是加人，或者延长工人砌砖时间。每一个房间好比软件系统中每一个小模块，一般都需要编码MVC代码；若不降低编码复杂度，则无法适应当前快速变化的时代需求。换个角度，降低编码复杂度，软件开发效率自然就上去了。
-         手工业时代的996加班，就能胜过机器大工业时代吗？ 显然不能。 机器大工业时代也不可能胜过智能制造时代。  提高生产效率，提高生产力才是不变的真理！**加班是奋斗，提高效率也是奋斗**；换个角度，降低编码复杂度，软件生产率自然就提上去了。软件行业除了艰苦奋斗，也需要创新，需要提高软件生产率，提高软件生产力。**提高软件生产率不但是奋斗，而且还是创新**。   
-      作为程序员或开发人员的你，还记得开发javaweb系统，是如何写mvc的程序了吗？ 当操作一个DB表时，要写一份dao；当两个表时，就要写两份dao；当n个表时，就要写n份dao。其实这样开发，实际是做了许多重复、类似的工作。当有人告诉你，很多情况下，你其实只用写一个dao，有何感想？        
+**Bee** is an ORM framework.   
+**Bee** is an easy and high efficiency ORM framework. **Easy for Stronger.** 	 
+**Coding Complexity is O(1),it means that Bee will do the Dao for you**.  
 
-      在以前的年代里，我们写了实在是太多的冤枉代码，以致消耗了我们不少的青春。以上举的例子，只是我们工作中的一部分，除了mvc,orm,还有html，我们也是写了许多没必要的代码。学过数据结构都知道，时间复杂度是O(1)的代码，会比是O(n)的代码，快n倍；但我们是否意识到编码复杂度是O(n)的程序比编码复杂度是O(1)的多写了多少代码吗？ n可是一个会膨胀的量呀，想想都后怕。   
-      花上10分钟，去了解下 "**编码复杂度**" 的概念吧， 还有第一个实现 编码复杂度是O(1)的ORM框架-**[Bee](https://github.com/automvc/bee)**。相信你这10分钟，不会白花，你完成软件的工作效率不提升n倍，也有0.8n。  **Bee的编码复杂度为O(1)**，即用了**Bee**，你可以不用另外写dao代码。   
-
-**Bee** 网址:  
+**Bee** see:  
 https://github.com/automvc/bee  
-
-**Bee在gitee** 的网址:  
-https://gitee.com/automvc/bee
