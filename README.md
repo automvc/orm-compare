@@ -282,7 +282,7 @@ Test point: Batch Insert;Select paging; Transaction(update and select).
 
 
 **Bee** is an ORM framework.   
-**Bee** is an easy and high efficiency ORM framework. **Easy for Stronger.** 	 
+**Bee** is an easy and high efficiency ORM framework. **Easy for Stronger.**   
 **Coding Complexity is O(1),it means that Bee will do the Dao for you**.  
 
 **Bee** see:  
