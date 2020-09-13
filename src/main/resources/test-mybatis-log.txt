@@ -1,0 +1,143 @@
+MyBatis
+(clear)
+First:
+Now test the ORM: Mybatis
+Now it is 1 time.
+insert  1 record(s)!
+insert  5000 record(s)!
+----test batch insert:  1513 ms
+----test select 20 times:  99 ms
+----test update and select 20 times:  1170 ms
+1513   99  1170
+
+Now it is 2 time.
+insert  1 record(s)!
+insert  10000 record(s)!
+----test batch insert:  1092 ms
+----test select 50 times:  313 ms
+----test update and select 50 times:  31 ms
+1092   313  31
+
+Now it is 3 time.
+insert  1 record(s)!
+insert  20000 record(s)!
+----test batch insert:  1466 ms
+----test select 100 times:  1795 ms
+----test update and select 100 times:  79 ms
+1466   1795  79
+
+Now it is 4 time.
+insert  1 record(s)!
+insert  50000 record(s)!
+----test batch insert:  1700 ms
+----test select 200 times:  2232 ms
+----test update and select 200 times:  146 ms
+1700   2232  146
+
+
+
+
+Second:
+Now test the ORM: Mybatis
+Now it is 1 time.
+insert  1 record(s)!
+insert  5000 record(s)!
+----test batch insert:  1045 ms
+----test select 20 times:  423 ms
+----test update and select 20 times:  1092 ms
+1045   423  1092
+
+Now it is 2 time.
+insert  1 record(s)!
+insert  10000 record(s)!
+----test batch insert:  577 ms
+----test select 50 times:  655 ms
+----test update and select 50 times:  33 ms
+577   655  33
+
+Now it is 3 time.
+insert  1 record(s)!
+insert  20000 record(s)!
+----test batch insert:  812 ms
+----test select 100 times:  1622 ms
+----test update and select 100 times:  79 ms
+812   1622  79
+
+Now it is 4 time.
+insert  1 record(s)!
+insert  50000 record(s)!
+----test batch insert:  1923 ms
+----test select 200 times:  2310 ms
+----test update and select 200 times:  141 ms
+1923   2310  141
+
+
+
+
+Third:
+Now test the ORM: Mybatis
+Now it is 1 time.
+insert  1 record(s)!
+insert  5000 record(s)!
+----test batch insert:  1021 ms
+----test select 20 times:  421 ms
+----test update and select 20 times:  1170 ms
+1021   421  1170
+
+Now it is 2 time.
+insert  1 record(s)!
+insert  10000 record(s)!
+----test batch insert:  470 ms
+----test select 50 times:  670 ms
+----test update and select 50 times:  41 ms
+470   670  41
+
+Now it is 3 time.
+insert  1 record(s)!
+insert  20000 record(s)!
+----test batch insert:  1600 ms
+----test select 100 times:  1221 ms
+----test update and select 100 times:  81 ms
+1600   1221  81
+
+Now it is 4 time.
+insert  1 record(s)!
+insert  50000 record(s)!
+----test batch insert:  1850 ms
+----test select 200 times:  2341 ms
+----test update and select 200 times:  151 ms
+1850   2341  151
+
+
+
+(clear)
+10w test 3 times:
+
+ Exception Packet for query is too large
+ 
+ Now test the ORM: Mybatis
+Now it is 5 time.
+insert  1 record(s)!
+----test batch insert:  0 ms  -N/A
+----test select 500 times:  6160 ms
+----test update and select 500 times:  32404 ms
+0   6160  32404
+
+
+Now test the ORM: Mybatis
+Now it is 5 time.
+insert  1 record(s)!
+----test batch insert:  0 ms
+----test select 500 times:  6260 ms
+----test update and select 500 times:  32891 ms
+0   6260  32891
+
+
+Now test the ORM: Mybatis
+Now it is 5 time.
+insert  1 record(s)!
+----test batch insert:  0 ms
+----test select 500 times:  6230 ms
+----test update and select 500 times:  31171 ms
+0   6230  31171
+

@@ -1,0 +1,145 @@
+Bee
+(clear)
+First:
+Now test the ORM: Bee
+Now it is 1 time.
+insert  1 record(s)!
+insert  5000 record(s)!
+----test batch insert:  880 ms
+----test select 20 times:  21 ms
+----test update and select 20 times:  1081 ms
+880   21  1081
+
+Now it is 2 time.
+insert  1 record(s)!
+insert  10000 record(s)!
+----test batch insert:  720 ms
+----test select 50 times:  20 ms
+----test update and select 50 times:  70 ms
+720   20  70
+
+Now it is 3 time.
+insert  1 record(s)!
+insert  20000 record(s)!
+----test batch insert:  620 ms
+----test select 100 times:  46 ms
+----test update and select 100 times:  80 ms
+620   46  80
+
+Now it is 4 time.
+insert  1 record(s)!
+insert  50000 record(s)!
+----test batch insert:  1420 ms
+----test select 200 times:  51 ms
+----test update and select 200 times:  140 ms
+1420   51  140
+
+
+
+Second:
+Now test the ORM: Bee
+Now it is 1 time.
+insert  1 record(s)!
+insert  5000 record(s)!
+----test batch insert:  359 ms
+----test select 20 times:  16 ms
+----test update and select 20 times:  1076 ms
+359   16  1076
+
+Now it is 2 time.
+insert  1 record(s)!
+insert  10000 record(s)!
+----test batch insert:  358 ms
+----test select 50 times:  78 ms
+----test update and select 50 times:  78 ms
+358   78  78
+
+Now it is 3 time.
+insert  1 record(s)!
+insert  20000 record(s)!
+----test batch insert:  484 ms
+----test select 100 times:  32 ms
+----test update and select 100 times:  78 ms
+484   32  78
+
+Now it is 4 time.
+insert  1 record(s)!
+insert  50000 record(s)!
+----test batch insert:  1248 ms
+----test select 200 times:  16 ms
+----test update and select 200 times:  173 ms
+1248   16  173
+
+
+
+
+Third:
+Now test the ORM: Bee
+Now it is 1 time.
+insert  1 record(s)!
+insert  5000 record(s)!
+----test batch insert:  348 ms
+----test select 20 times:  15 ms
+----test update and select 20 times:  1110 ms
+348   15  1110
+
+Now it is 2 time.
+insert  1 record(s)!
+insert  10000 record(s)!
+----test batch insert:  297 ms
+----test select 50 times:  78 ms
+----test update and select 50 times:  62 ms
+297   78  62
+
+Now it is 3 time.
+insert  1 record(s)!
+insert  20000 record(s)!
+----test batch insert:  546 ms
+----test select 100 times:  79 ms
+----test update and select 100 times:  94 ms
+546   79  94
+
+Now it is 4 time.
+insert  1 record(s)!
+insert  50000 record(s)!
+----test batch insert:  1279 ms
+----test select 200 times:  48 ms
+----test update and select 200 times:  171 ms
+1279   48  171
+
+
+
+(clear)
+10w test 3 times:
+
+
+Now test the ORM: Bee
+Now it is 5 time.
+insert  1 record(s)!
+insert  100000 record(s)!
+----test batch insert:  4700 ms
+----test select 500 times:  67 ms
+----test update and select 500 times:  31600 ms
+4700   67  31600
+
+
+Now test the ORM: Bee
+Now it is 5 time.
+insert  1 record(s)!
+insert  100000 record(s)!
+----test batch insert:  4000 ms
+----test select 500 times:  61 ms
+----test update and select 500 times:  31240 ms
+4000   61  31240
+
+
+
+Now test the ORM: Bee
+Now it is 5 time.
+insert  1 record(s)!
+insert  100000 record(s)!
+----test batch insert:  3470 ms
+----test select 500 times:  44 ms
+----test update and select 500 times:  31688 ms
+3470   44  31688
+
