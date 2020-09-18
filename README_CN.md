@@ -114,18 +114,21 @@
   </tr>
 </table>
 
-#### Bee需要用的文件数:	
+![batch-insert](https://gitee.com/automvc/orm-compare/blob/master/batch-insert-compare.png "batch-insert")	
+
+#### Bee需要用的文件(3个):	
 org\teasoft\orm\compare\model\Orders.java   
 org\teasoft\orm\compare\service\OrdersService.java   
 org\teasoft\orm\compare\bee\service\BeeOrdersService.java   
 
-#### MyBatis需要用的文件数:	
+#### MyBatis需要用的文件(6个):	
 org\teasoft\orm\compare\model\Orders.java   
 **org\teasoft\orm\compare\mybatis\dao\OrdersDao.java**   
 **org\teasoft\orm\compare\mybatis\dao\OrdersMapper.java**   
 **org\teasoft\orm\compare\mybatis\dao\impl\OrdersDaoImpl.java**   
 org\teasoft\orm\compare\service\OrdersService.java   
 org\teasoft\orm\compare\mybatis\service\MybatisOrdersService.java   
+
 
 **Bee** is an ORM framework.   
 **Bee** is an easy and high efficiency ORM framework. **Easy for Stronger.**   

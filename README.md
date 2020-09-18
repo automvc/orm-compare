@@ -281,6 +281,20 @@ Test point: Batch Insert;Select paging; Transaction(update and select).
 </table>
 
 
+#### Bee need files(3):	
+org\teasoft\orm\compare\model\Orders.java   
+org\teasoft\orm\compare\service\OrdersService.java   
+org\teasoft\orm\compare\bee\service\BeeOrdersService.java   
+
+#### MyBatis need files(6):	
+org\teasoft\orm\compare\model\Orders.java   
+**org\teasoft\orm\compare\mybatis\dao\OrdersDao.java**   
+**org\teasoft\orm\compare\mybatis\dao\OrdersMapper.java**   
+**org\teasoft\orm\compare\mybatis\dao\impl\OrdersDaoImpl.java**   
+org\teasoft\orm\compare\service\OrdersService.java   
+org\teasoft\orm\compare\mybatis\service\MybatisOrdersService.java   
+
+
 **Bee** is an ORM framework.   
 **Bee** is an easy and high efficiency ORM framework. **Easy for Stronger.**   
 **Coding Complexity is O(1),it means that Bee will do the Dao for you**.  
